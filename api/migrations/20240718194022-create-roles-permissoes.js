@@ -19,7 +19,8 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       permissao_id: {
-        type: Sequelize.UUID,        references: {
+        type: Sequelize.UUID,
+        references: {
           model: 'permissoes',
           key: 'id'
         },
